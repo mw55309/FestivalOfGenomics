@@ -74,6 +74,9 @@ boxplot(100 * map$matches/(map$matches + map$deletions + map$insertions + map$mi
 nrow(map)
 nrow(pass)
 
+# longest alignments
+map[order(map$read_len, decreasing=TRUE),][1:10,]
+
 
 # Squiggles
 r1 <- "LomanLabz_PC_Ecoli_K12_MG1655_20150924_MAP006_1_5005_1_ch440_file31_strand.fast5"
