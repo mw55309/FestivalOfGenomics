@@ -3,10 +3,13 @@
 ## Edinburgh Genomics - Edinburgh Genomics: Oxford Nanopore MinION sequencing - Data handling, analysis and applications
 
 #### View individual files using hdfvew
+```sh
 hdfview MAP006-1/MAP006-1_downloads/pass/LomanLabz_PC_Ecoli_K12_MG1655_20150924_MAP006_1_5005_1_ch150_file24_strand.fast5 &
 hdfview /data/basecall/pc6_groupc/pass/NB02/nanopore2_PoreCamp_GrpC_0829_1_ch501_file24_strand.fast5 &
+```
 
 ### Looking at Nick's SQK-MAP-006 data
+```R
 library(poRe)
 setwd("C:/Users/Mick/Dropbox (Edinburgh Genomics)/Presentations/FestivalOfGenomics")
 
@@ -85,7 +88,7 @@ plot.squiggle(t1$template, maxseconds=20)
 screen(2)
 plot.squiggle(t2$template, maxseconds=20)
 close.screen(all=TRUE)
-
+```
 
 
 
